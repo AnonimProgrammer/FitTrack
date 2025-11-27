@@ -1,4 +1,5 @@
-# Fitness & Habits Tracker
+# FitTrack 
+**Fitness & Habits Tracker Web Application**
 
 A modern web app to track daily habits, workouts, and progress. Monitor streaks, personal records, and achievements while building healthy routines.
 
@@ -19,15 +20,14 @@ A modern web app to track daily habits, workouts, and progress. Monitor streaks,
   - Edit profile info (name, email, bio)
   - Reset all data or delete account
 - **Responsive UI**
-  - Works on desktop and mobile
+  - Works on desktop
 
 ## Tech Stack
 
 - **Frontend:** React + TypeScript + Tailwind CSS
 - **UI Components:** Lucide icons, Radix UI inspired components
-- **Backend:** Node.js + Express (or Firebase)
+- **Backend:** Node.js + Express + PostgreSQL
 - **State Management:** React `useState` + `useEffect`
-- **Data Persistence:** REST API
 
 ## Project Structure
 
@@ -35,51 +35,30 @@ A modern web app to track daily habits, workouts, and progress. Monitor streaks,
 
 ```
 src/
- ├─ api/            # API calls to backend (habits, workouts, user)
+ ├─ api/            # API calls to backend (habits, workouts, user, auth)
  ├─ components/     # UI components (cards, inputs, checkboxes, buttons)
- ├─ views/          # Pages: HabitsView, ProfileView, StatsView
  ├─ App.tsx         # Main app component with routes
- └─ main.tsx        # Entry point
+ └─ main.jsx        # Entry point
 ```
 
 ### Backend
 
 ```
 server/
- ├─ controllers/    # Business logic for habits, workouts, users
- ├─ routes/         # API routes
- ├─ models/         # Database models (PostgreSQL, MongoDB, or Firebase schemas)
- ├─ services/       # Utility services (email, notifications, streak calculations)
- ├─ index.js        # Server entry point
- └─ config/         # Configuration (DB, environment variables)
+ ├─ controller/    # Controller layer 
+ ├─ middleware/    # Auth middleware 
+ ├─ migration/     # Migration files
+ ├─ route/         # API routes
+ ├─ repo/          # Repositories of data models 
+ ├─ service/       # Business logic for habits, workouts, users and authentication
+ ├─ server.js      # Server entry point
+ └─ config/        # DB Configuration 
 ```
 
-## Installation
+---
 
-1. Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/fitness-habits-tracker.git
-cd fitness-habits-tracker
-```
-
-2. Install frontend dependencies:
-
-```bash
-npm install
-```
-
-3. Configure API endpoints in `src/api/`.
-
-4. Start the development server:
-
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to view the app.
-
-## License
-
-MIT License © 2025 Your Name
-
+<p align="center">
+  <b>Omar Ismayilov</b><br>
+  <i>Software Engineer • Backend & System Design Enthusiast</i><br>
+  Building reliable systems with simplicity and architecture in mind.
+</p>
