@@ -50,7 +50,7 @@ export function ProfileView() {
   if (loading) {
     return (
       <div className="p-8 max-w-5xl mx-auto animate-pulse">
-        <Card className="p-6 h-48 mb-6" />
+        <Card className="p-6 h-90 mb-6" />
         <div className="grid grid-cols-3 gap-4">
           <Card className="p-6 h-24" />
           <Card className="p-6 h-24" />

@@ -52,10 +52,13 @@ export function ProgressView() {
       const workoutArray = [];
       let totalDuration = 0;
       let totalCalories = 0;
+      let completedDays = 0;
       for (let i = 6; i >= 0; i--) {
         const date = new Date(today);
         date.setDate(today.getDate() - i);
         const day = date.toLocaleDateString('en-US', { weekday: 'short' });
+
+        completedDays += (dayMap[day] == null) ? 0 : 1;
         const val = dayMap[day] || { duration: 0, calories_burned: 0 };
 
         workoutArray.push({ day, ...val });
@@ -64,7 +67,7 @@ export function ProgressView() {
       }
       setWorkoutData(workoutArray);
 
-      const weeklyAvg = Math.round(totalDuration / 7);
+      const weeklyAvg = Math.round(totalDuration / ((completedDays == 0) ? 1 : completedDays));
 
       setSummary({ weeklyAvg, totalCalories, avgCompletion });
     };
