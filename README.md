@@ -3,6 +3,13 @@
 
 A modern web app to track daily habits, workouts, and progress. Monitor streaks, personal records, and achievements while building healthy routines.
 
+## Team Members
+
+- Omar Ismayilov – Backend Developer  
+- Hafiz Jafarov – BA  
+- Deniz Aliyev – UI/UX Designer  
+- Nemat Shirinzade – Backend Developer  
+
 ## Features
 
 - **Daily Habits**
@@ -55,10 +62,3 @@ server/
  └─ config/        # DB Configuration 
 ```
 
----
-
-<p align="center">
-  <b>Omar Ismayilov</b><br>
-  <i>Software Engineer • Backend & System Design Enthusiast</i><br>
-  Building reliable systems with simplicity and architecture in mind.
-</p>
